@@ -53,6 +53,7 @@ export default function SacredOverlay({
                                     src={src}
                                     alt=""
                                     priority
+                                    unoptimized
                                     fill
                                     className={`object-cover grayscale ${clearBlur ? "blur-none scale-[1.03]" : "blur-sm"}`}
                                 />

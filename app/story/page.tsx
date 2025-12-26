@@ -57,6 +57,7 @@ export default function StoryPage() {
                         <Image
                             src="/photos/story-1.jpg"
                             alt="Memory"
+                            unoptimized
                             fill
                             className="        object-cover
     blur-sm
@@ -96,6 +97,7 @@ export default function StoryPage() {
                                 <Image
                                     src={card.image}
                                     alt=""
+                                    unoptimized
                                     fill
                                     className="
                 object-cover
@@ -153,6 +155,7 @@ export default function StoryPage() {
                         <Image
                             src="/photos/letters/1.jpg"
                             alt=""
+                            unoptimized
                             fill
                             className="
               object-cover
@@ -210,6 +213,7 @@ export default function StoryPage() {
                                     alt=""
                                     width={400}
                                     height={600}
+                                    unoptimized
                                     className="
                   object-cover
                   ring-1 ring-black/5
