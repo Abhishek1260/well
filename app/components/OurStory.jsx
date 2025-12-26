@@ -107,6 +107,23 @@ export default function OurStory() {
                     but to show you
                     how everything had quietly led here.
                 </p>
+                <div className="mt-10 text-center">
+                    <a
+                        href="https://www.figma.com/proto/6NjBQ0gIx94hHEiUYJsmvG/Untitled--Copy-?node-id=0-1&t=VzsOY0cD4VQqiTnb-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="
+                        inline-block
+                        font-serif
+                        text-sm
+                        text-[#7A7A7A]
+                        hover:text-[#2E2E2E]
+                        transition
+                        "
+                    >
+                        View the timeline →
+                    </a>
+                </div>
             </div>
 
             {/* Yes */}
