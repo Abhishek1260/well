@@ -1,8 +1,7 @@
 "use client";
 
 import Section from "../components/Section";
-import PasswordSection from "../components/PasswordSection";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import SacredOverlay from "../components/SacredOverlay";

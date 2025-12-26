@@ -48,7 +48,7 @@ export default function SacredOverlay({
                     </div>
 
                     {/* FADE + BLUR LAYER */}
-                    <div className="absolute inset-0 bg-[#FAF7F3]/75 backdrop-blur-md" />
+                    <div className="absolute inset-0 bg-[#FAF7F3]/20 backdrop-blur-sm" />
 
                     {/* LETTER WINDOW */}
                     <motion.div
