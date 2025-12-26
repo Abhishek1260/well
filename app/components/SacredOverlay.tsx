@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const images = Array.from(
-    { length: 20 },
+    { length: 12 },
     (_, i) => `/photos/sacred/${i + 1}.jpg`
 );
 
