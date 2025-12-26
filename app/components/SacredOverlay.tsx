@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const images = Array.from(
     { length: 20 },
@@ -15,6 +16,17 @@ export default function SacredOverlay({
     open: boolean;
     onClose: () => void;
 }) {
+
+    const [clearBlur, setClearBlur] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setClearBlur(true);
+        }, 15000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <AnimatePresence>
             {open && (
@@ -30,7 +42,7 @@ export default function SacredOverlay({
                         {images.map((src, i) => (
                             <div
                                 key={i}
-                                className={`relative h-40 rounded-xl overflow-hidden ${i % 3 === 0
+                                className={`relative h-100 w-100 rounded-xl overflow-hidden ${i % 3 === 0
                                     ? "rotate-2"
                                     : i % 3 === 1
                                         ? "-rotate-2"
@@ -40,15 +52,16 @@ export default function SacredOverlay({
                                 <Image
                                     src={src}
                                     alt=""
+                                    priority
                                     fill
-                                    className="object-cover grayscale"
+                                    className={`object-cover grayscale ${clearBlur ? "blur-none scale-[1.03]" : "blur-sm"}`}
                                 />
                             </div>
                         ))}
                     </div>
 
                     {/* FADE + BLUR LAYER */}
-                    <div className="absolute inset-0 bg-[#FAF7F3]/20 backdrop-blur-sm" />
+                    <div className={`absolute inset-0 bg-[#FAF7F3]/20  ${clearBlur ? "blur-none" : "backdrop-blur-sm"}`} />
 
                     {/* LETTER WINDOW */}
                     <motion.div
