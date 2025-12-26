@@ -33,12 +33,12 @@ export default function StoryPage() {
     const PASSWORD = ["abhira", "rabhi"];
 
     const frames = [
-        { src: "1.jpg", rotate: "-rotate-2", z: "z-10", mt: "mt-0" },
-        { src: "2.jpg", rotate: "rotate-3", z: "z-20", mt: "mt-12" },
-        { src: "3.jpg", rotate: "-rotate-1", z: "z-30", mt: "-mt-8" },
-        { src: "4.jpg", rotate: "rotate-2", z: "z-20", mt: "mt-6" },
-        { src: "5.jpg", rotate: "-rotate-3", z: "z-10", mt: "-mt-6" },
-        { src: "6.jpg", rotate: "rotate-1", z: "z-20", mt: "mt-4" },
+        { src: "1.jpg", rotate: "-rotate-2", z: "z-10", mt: "mt-0", mh: '-mr-10' },
+        { src: "2.jpg", rotate: "rotate-3", z: "z-20", mt: "mt-12", mh: '-mr-10' },
+        { src: "3.jpg", rotate: "-rotate-1", z: "z-30", mt: "-mt-8", mh: '-ml-10' },
+        { src: "4.jpg", rotate: "rotate-2", z: "z-20", mt: "mt-6", mh: '-mr-10' },
+        { src: "5.jpg", rotate: "-rotate-3", z: "z-10", mt: "-mt-8", mh: '-mr-10' },
+        { src: "6.jpg", rotate: "rotate-1", z: "z-20", mt: "mt-4", mh: '-ml-15' },
     ];
 
 
@@ -195,6 +195,7 @@ export default function StoryPage() {
               ${frame.z}
               ${frame.mt}
               ${frame.rotate}
+              ${frame.mh}
               transition-transform
               duration-700
               hover:rotate-0
