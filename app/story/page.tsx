@@ -57,17 +57,18 @@ export default function StoryPage() {
                     {loveCards.map((card, i) => (
                         <div
                             key={i}
-                            className="
+                            className={`
                             hover:-translate-y-1 transition-transform duration-300
-
-            group
-            bg-[#F1ECE6]
-            rounded-2xl
-            overflow-hidden
-            shadow-sm
-            transition
-            hover:shadow-lg
-          "
+                            hover:rotate-0
+                            ${i % 2 === 0 ? "rotate-2" : "-rotate-2"}
+                            group
+                            bg-[#F1ECE6]
+                            rounded-2xl
+                            overflow-hidden
+                            shadow-sm
+                            transition
+                            hover:shadow-lg
+                        `}
                         >
                             {/* PHOTO */}
                             <div className="relative h-56 w-full overflow-hidden  ">

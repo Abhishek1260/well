@@ -154,7 +154,7 @@ export default function OurStory() {
                     and the courage to choose each other.
                 </p>
             </div><div className="flex justify-center my-12">
-                <div className="relative w-64 h-80 rounded-3xl overflow-hidden shadow-xl group">
+                <div className="relative w-64 h-80 rounded-3xl overflow-hidden shadow-xl group -rotate-3 hover:rotate-0 transition-transform duration-700 ease-in-out">
                     <Image
                         src="/photos/story-1.jpg"
                         alt="Memory"
