@@ -54,12 +54,19 @@ export default function StoryPage() {
                 <p>It didn’t begin loudly. It just stayed.</p>
 
                 <div className="flex justify-center my-12">
-                    <div className="relative w-64 h-80 rounded-3xl overflow-hidden shadow-xl">
+                    <div className="relative w-64 h-80 rounded-3xl overflow-hidden shadow-xl group">
                         <Image
                             src="/photos/story-1.jpg"
                             alt="Memory"
                             fill
-                            className="object-cover grayscale hover:grayscale-0 transition duration-1000"
+                            className="        object-cover
+    blur-sm
+    opacity-95
+    transition-all
+    duration-1000
+    ease-in-out
+    group-hover:blur-none
+    group-hover:scale-[1.03]"
                         />
                     </div>
                 </div>

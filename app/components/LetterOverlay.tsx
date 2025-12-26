@@ -64,14 +64,14 @@ export default function LetterOverlay({
                                 priority
                                 className="
         object-cover
-        grayscale
-        opacity-90
-        transition-all
-        duration-1000
-        ease-in-out
-        group-hover:grayscale-0
-        group-hover:opacity-100
-        group-hover:scale-[1.03]
+    blur-sm
+    opacity-95
+    transition-all
+    duration-1000
+    ease-in-out
+    group-hover:blur-none
+    group-hover:scale-[1.03]
+
       "
                             />
                         </div>
