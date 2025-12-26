@@ -5,7 +5,6 @@ import LetterOverlay from "./components/LetterOverlay";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showContent, setShowContent] = useState(false);
 
 
   return (
@@ -33,12 +32,12 @@ export default function Home() {
     focus:ring-[#C6A77D]/40
 
 ">
-          Click Me
+          Click Me ❤️
         </button>
 
       </div>
 
-      <LetterOverlay open={isOpen} onClose={() => { setShowContent(true); setIsOpen(false) }} />
+      <LetterOverlay open={isOpen} onClose={() => { setIsOpen(false) }} />
     </>
   );
 }
