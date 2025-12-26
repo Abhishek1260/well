@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import SacredOverlay from "../components/SacredOverlay";
-
+import OurStory from "../components/OurStory";
 export default function StoryPage() {
 
     const loveCards = [
         {
-            text: "The way you make normal days lighter.",
+            text: "The way you make things feel easy. Even on days when my mind is full, being with you feels calm — like I don’t have to try so hard anymore.",
             image: "/photos/love/1.jpg",
         },
         {
-            text: "How you listen without trying to fix everything.",
+            text: "How you listen — really listen. Not just to words, but to pauses, moods, and silences that don’t always need explaining.",
             image: "/photos/love/2.jpg",
         },
         {
-            text: "Your quiet patience.",
+            text: "Your patience with me. In the way you give things time, in the way you don’t rush feelings, and in how you let things grow naturally.",
             image: "/photos/love/3.jpg",
         },
         {
-            text: "The calm you carry without noticing.",
+            text: "The way you show up — quietly, consistently. You don’t demand attention, but somehow, you hold mine completely.",
             image: "/photos/love/4.jpg",
         },
     ];
@@ -30,7 +30,7 @@ export default function StoryPage() {
     const [input, setInput] = useState("");
     const [open, setOpen] = useState(false);
 
-    const PASSWORD = "us";
+    const PASSWORD = ["abhira", "rabhi"];
 
     const frames = [
         { src: "1.jpg", rotate: "-rotate-2", z: "z-10", mt: "mt-0" },
@@ -49,29 +49,8 @@ export default function StoryPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="bg-[#FAF7F3] min-h-screen py-32 space-y-32"
         >
-            <Section title="Our Story">
-                <p>It didn’t begin loudly. It just stayed.</p>
 
-                <div className="flex justify-center my-12">
-                    <div className="relative w-64 h-80 rounded-3xl overflow-hidden shadow-xl group">
-                        <Image
-                            src="/photos/story-1.jpg"
-                            alt="Memory"
-                            unoptimized
-                            fill
-                            className="        object-cover
-    blur-sm
-    opacity-95
-    transition-all
-    duration-1000
-    ease-in-out
-    group-hover:blur-none
-    group-hover:scale-[1.03]"
-                        />
-                    </div>
-                </div>
-
-            </Section>
+            <OurStory />
 
             <Section title="Things I Love About You">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -130,15 +109,21 @@ export default function StoryPage() {
 
                 {/* LETTER TEXT – PART 1 */}
                 <p className="font-serif italic text-lg leading-loose text-[#2E2E2E]">
-                    There were nights I typed your name and erased it.
+                    There were so many moments
+                    when I wanted to tell you things.
                     <br />
-                    Mornings I carried conversations we never had.
+                    Not big declarations —
+                    just small truths that showed up quietly
+                    and stayed with me longer than I expected.
                     <br /><br />
-                    Not because I didn’t want to say things —
-                    but because some feelings felt too fragile
-                    to risk losing.
+                    I wrote messages in my head.
+                    <br />
+                    I replayed conversations we never had.
+                    <br /><br />
+                    Not because I was unsure about you,
+                    but because I cared enough
+                    to not rush something that felt this real.
                 </p>
-
                 {/* PHOTO – FLOATING MEMORY */}
                 <div className="relative my-16 flex justify-end">
                     <div
@@ -172,11 +157,26 @@ export default function StoryPage() {
 
                 {/* LETTER TEXT – PART 2 */}
                 <p className="font-serif italic text-lg leading-loose text-[#2E2E2E]">
-                    So I kept them here.
+                    There were times when waiting wasn’t easy.
                     <br />
-                    Between silence and hope.
+                    Times when saying nothing took more effort
+                    than saying everything.
                     <br /><br />
-                    Unsent — but never unfelt.
+                    But I chose patience over pressure.
+                    <br />
+                    I chose honesty over urgency.
+                    <br /><br />
+                    And now, looking back,
+                    I’m glad those letters stayed unsent —
+                    because they were never meant to convince you.
+                    <br /><br />
+                    They were just proof
+                    of how deeply you already mattered to me.
+                </p>
+                <br />
+                <br />
+                <p className="font-serif italic text-lg leading-loose text-[#2E2E2E]">
+                    Some things were always meant to be said later.
                 </p>
             </section>
 
@@ -253,21 +253,38 @@ export default function StoryPage() {
                     What I Hope For
                 </h2>
 
-                <div className="space-y-8 text-lg leading-loose text-[#2E2E2E]">
-                    <p>I don’t hope for perfection.</p>
-
-                    <p>I don’t hope for certainty.</p>
-
-                    <p className="text-[#7A7A7A]">
-                        I don’t even hope for answers.
+                <div className="font-serif text-lg leading-loose text-[#2E2E2E] space-y-8">
+                    <p>
+                        I don’t hope for perfection.
                     </p>
 
-                    <div className="w-12 h-px bg-[#C6A77D] mx-auto opacity-40" />
+                    <p>
+                        I don’t hope for grand promises
+                        or things said too soon.
+                    </p>
+
+                    <p className="text-[#7A7A7A]">
+                        I don’t even hope that everything
+                        will always be easy.
+                    </p>
+
+                    <p>
+                        I just hope we keep choosing each other —
+                        on ordinary days,
+                        in quiet moments,
+                        and even when things feel uncertain.
+                    </p>
+
+                    <p>
+                        I hope we keep talking honestly,
+                        listening patiently,
+                        and growing at our own pace.
+                    </p>
 
                     <p className="font-serif text-xl">
-                        I just hope for something honest,
-                        something kind,
-                        something that doesn’t rush.
+                        And more than anything,
+                        I hope we never stop feeling
+                        at home with each other.
                     </p>
                 </div>
             </motion.section>
@@ -296,7 +313,7 @@ export default function StoryPage() {
 
                         <button
                             onClick={() => {
-                                if (input.toLowerCase() === PASSWORD) {
+                                if (PASSWORD.includes(input.toLowerCase())) {
                                     setOpen(true);
                                 } else {
                                     setInput("");

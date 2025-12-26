@@ -82,27 +82,47 @@ export default function SacredOverlay({
               text-center
             "
                     >
-                        <p className="font-serif text-2xl leading-loose text-[#2E2E2E]">
-                            I love you
-                            <br />
-                            so much.
-                        </p>
+                        <div className="text-center">
+                            <p className="font-serif text-2xl leading-loose text-[#2E2E2E]">
+                                I love you so much ❤️
+                            </p>
 
-                        <p className="mt-8 text-lg leading-relaxed text-[#2E2E2E]">
-                            Not loudly.
-                            <br />
-                            Not perfectly.
-                            <br />
-                            But honestly —
-                            <br />
-                            in a way that chose you
-                            every single day.
-                        </p>
+                            <p className="mt-10 font-serif text-lg leading-relaxed text-[#2E2E2E]">
+                                Not loudly, Not perfectly.
+                                <br /><br />
+                                But in the way that feels steady 🌱
+                                <br />
+                                In the way that feels honest ✨
+                                <br /><br />
+                                In the way that feels like home 🏡
+                            </p>
+
+                            <p className="mt-4 font-serif text-lg leading-relaxed text-[#2E2E2E]">
+                                I don’t love you with urgency.
+                                <br />
+                                I love you with intention 💫
+                                <br /><br />
+                                With patience 🤍
+                                <br />
+                                With respect 🌸
+                                <br />
+                                With a lot of gratitude 🕊️
+                            </p>
+
+                            <p className="mt-4 font-serif text-lg leading-relaxed text-[#2E2E2E]">
+                                I’m really happy that I get to be with you 💖
+                            </p>
+
+                            <p className="mt-6 font-serif italic text-sm text-[#7A7A7A]">
+                                Always ✨
+                            </p>
+                        </div>
+
 
                         {/* optional close */}
                         <button
                             onClick={onClose}
-                            className="mt-10 text-sm text-[#7A7A7A] hover:text-[#2E2E2E]"
+                            className="mt-6 text-sm text-[#7A7A7A] hover:text-[#2E2E2E]"
                         >
                             Close
                         </button>
