@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SacredOverlay from "../components/SacredOverlay";
 import OurStory from "../components/OurStory";
+import OneTimeMessage from "../components/OneTimeMessage";
 export default function StoryPage() {
 
     const loveCards = [
@@ -180,6 +181,8 @@ export default function StoryPage() {
                     Some things were always meant to be said later.
                 </p>
             </section>
+
+            <OneTimeMessage />
 
             <section className="max-w-5xl mx-auto px-6">
                 <h2 className="font-serif text-3xl mb-16 text-center">
